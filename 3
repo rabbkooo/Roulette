@@ -1,0 +1,5 @@
+document.getElementById('spin').addEventListener('click', function() {
+    let wheel = document.getElementById('wheel-inner');
+    let randomDegree = Math.floor(Math.random() * 360) + 3600; // 3600+ to make multiple spins
+    wheel.style.transform = `rotate(${randomDegree}deg)`;
+});
